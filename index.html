@@ -65,8 +65,8 @@
                 <!-- About Section Content-->
                 
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead text-black">I am Hier Gabion III Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad inventore delectus exercitationem assumenda cumque excepturi aut repellat rerum aliquid iure! Odit expedita ea beatae unde eum aperiam quisquam, ipsam iusto!</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead text-black"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aliquid deleniti sed. Sapiente mollitia labore exercitationem nobis, facilis, quas, sit reiciendis explicabo hic perferendis blanditiis modi id ipsa dolores quibusdam.</p></div>
+                    <div class="col-md-auto ms-auto"><p class="lead text-black">I am Hier Gabion III career shifter software developer. I primarily focus on creating web-based applications and my technologies are HTML, CSS, JavaScript, React.JS and Node.JS.</p></div>
+                    <!-- <div class="col-lg-4 me-auto"><p class="lead text-black"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum aliquid deleniti sed. Sapiente mollitia labore exercitationem nobis, facilis, quas, sit reiciendis explicabo hic perferendis blanditiis modi id ipsa dolores quibusdam.</p></div> -->
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -168,29 +168,40 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN"
+                        action="https://formspree.io/f/myyoekna"
+                        method="POST"
+                        >
+
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input type="text" name="fullname" 
+                                id="message"
+                                class="form-control" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Full name</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input 
+                                name="_replyto"
+                                class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email address</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input name="phonenumber"class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Phone number</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea 
+                                name="message"
+                                class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required" ></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
@@ -201,9 +212,9 @@
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    <!-- To activate this form, sign up at
+                                    <br/> -->
+                                    <!-- <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a> -->
                                 </div>
                             </div>
                             <!-- Submit error message-->
@@ -225,17 +236,20 @@
                     <!-- Footer Location-->
                     <div class="col mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
+       
                         <p class="lead mb-0">
                             <i class="fa fa-map-marker" aria-hidden="true"></i> Cainta, Rizal, PH, 1900
-                        
                         </p>
                         <br>
                          <!-- Footer Social Icons-->        
                         <h4 class="text-uppercase mb-4">Around the Web</h4>
-                            <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i>
+                        <p class="lead mb-4">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> hiergabion03@gmail.com
+                        </p>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/thirdgabion03/" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/hiergabioniii" target="_blank"><i class="fab fa-fw fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/hier-gabion-iii-b176a3201/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/throughthehiers/" target="_blank"><i class="fab fa-fw fa-instagram"></i>
                         </a>
                       
                     </div>
@@ -269,7 +283,7 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/nocontentyet.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestiass magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal" onclick="winClose">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
